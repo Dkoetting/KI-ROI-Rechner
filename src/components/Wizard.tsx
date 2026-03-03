@@ -25,7 +25,6 @@ function validateStep(step: number, data: WizardData): string[] {
   const errors: string[] = [];
   switch (step) {
     case 0:
-      if (!data.company.name.trim())      errors.push('Unternehmensname ist erforderlich.');
       if (!data.company.industry)         errors.push('Bitte wählen Sie eine Branche aus.');
       if (!data.company.employees)        errors.push('Mitarbeiterzahl ist erforderlich.');
       if (!data.company.revenue)          errors.push('Jahresumsatz ist erforderlich.');
