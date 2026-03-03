@@ -37,8 +37,7 @@ export function Step1Company() {
               name="name"
               value={c.name}
               onChange={(v) => u('name', v)}
-              placeholder="Muster GmbH"
-              required
+              placeholder="Muster GmbH (optional)"
             />
           </div>
 
